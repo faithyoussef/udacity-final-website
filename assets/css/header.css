@@ -1,0 +1,80 @@
+
+  
+  /**
+   * responsive for large than 1200px screen
+   */
+  
+   @media (min-width: 1200px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 1140px; }
+  
+    body.nav-active { overflow-y: overlay; }
+  
+  
+  
+    /**
+     * HEADER
+     */
+  
+    .nav-open-btn,
+    .navbar-top,
+    .navbar-bottom,
+    .copyright-text { display: none; }
+  
+    .navbar,
+    .navbar.active {
+      all: unset;
+      display: block;
+    }
+  
+    .navbar-list {
+      border-block-end: none;
+      display: flex;
+      gap: 40px;
+      margin-inline: auto;
+    }
+  
+    .header .btn { margin-inline-start: 0; }
+  
+    .navbar-link {
+      color: var(--text-wild-blue-yonder);
+      font-weight: unset;
+    }
+  
+    .navbar-link:is(:hover, :focus-visible) {
+      color: var(--text-carolina-blue);
+      transform: translateX(0);
+    }
+  
+  
+  
+    /**
+     * HERO
+     */
+  
+    .hero .container { max-width: 1050px; }
+  
+  
+  
+    /**
+     * TAGS
+     */
+  
+    .tags .grid-list { grid-template-columns: repeat(6, 1fr); }
+  
+  
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer-top {
+      gap: 40px;
+      padding-inline: 120px;
+    }
+  
+  }
