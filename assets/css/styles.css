@@ -5,6 +5,8 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+@import "footer.css" screen;
+@import "header.css" screen;
 :root {
 
     /**
